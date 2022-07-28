@@ -1,0 +1,228 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+nav
+{
+    display: flex;
+    position: relative;
+    height: 9vh;
+    width: 160vh;
+    background-color: #1e1e1e;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #ff2448;
+}
+nav .logo
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vh;
+}
+nav ul{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10vh;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0px 5px;
+    list-style: none;
+}
+nav ul li a{
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    font-family:  'Source Sans Pro',sans-serif;
+    font-weight: bold;
+}
+#active
+{
+    color: #fff;
+}
+nav ul li a:hover
+{
+    color: rgba(255, 255, 255, 0.732);
+}
+
+nav input
+{
+    height: 6vh;
+    width: 27vh;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0vh;
+    font-size: 16px;
+    color: #1e1e1e;
+    
+}
+nav button
+{
+    height: 6vh;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0vh;
+    background-color: transparent;
+    border-color: transparent;
+    color: #ff2448;
+    font-size: 16px;
+}
+
+nav button:hover
+{
+    background-color: rgb(17, 104, 17);
+    color: white;
+}
+
+.alphabet
+{
+display: inline-flex;
+position: relative;
+margin: 0px 50%;
+transform: translate(-50%, -50%);
+margin-top: 50px;
+}
+.alphabet a
+{
+    margin: 0px 5px;
+    background-color: #ff2448 ;
+    border: 3px solid #333;
+    height: 20px;
+    width: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content {
+    flex: 1;
+    min-height: 800px;
+    margin-left: 25vh;
+    max-width: 800px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 60%;
+}
+.flexcontainer aside {
+    flex: 2;
+    min-height: 800px;
+    max-width: auto;
+    flex-grow: 1;
+    max-width: 350px;
+    flex-shrink: 1;
+    flex-basis: 10%;
+}
+.content .date
+{
+
+    height: 6vh;
+    width: 100vh;
+    background-color: #1e1e1e;
+    border-left: 20px solid rgb(225, 24, 57);
+  
+
+}
+.content .date span
+{
+    display: flex;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+}
+
+.content .card
+{
+    display: inline-flex;
+    position: relative;
+    height: 240px;
+    width: 225px;
+    border-radius: 5px;
+    transition: transform .1s;
+    overflow: hidden;
+    margin: 0px 5px;
+    margin-top: 2vh;
+}
+
+.content .card img
+{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(234, 26, 60);
+    border-radius: 5px;
+    object-fit: fill;
+}
+.content .card:hover
+{
+-ms-transform: scale(1.1); /* IE 9 */
+-webkit-transform: scale(1.1); /* Safari 3-8 */
+transform: scale(1.1);
+}
+.card .anime_name 
+{
+    position: absolute;
+    z-index: 1;
+}
+.card .lang 
+{
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    width: 45px;
+    background-color: #ff2448;
+    border-radius: 5px;
+}
+
+.aside_cont
+{
+    display: flex;
+    height: 6vh;
+    background-color: #1e1e1e;
+    border-left: 20px solid rgb(225, 24, 57);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+aside .list
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+aside .list .colum
+{
+    display: flex;
+    border: 1px solid #000;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+aside .list .colum img
+{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+.statu
+{
+    float: left;
+    margin-bottom: 0px;
+}
